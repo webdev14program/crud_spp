@@ -1,5 +1,5 @@
 <div class="jumbotron jumbotron-fluid text-center text-uppercase">
-    <h3 class="display-4">SISWA TJKT</h3>
+    <h3 class="display-4">PEMBAYARAN SPP SISWA TJKT</h3>
     <hr class="my-4">
     <h3 class="display-4">KELAS <?= $header['kelas'] ?></h3>
 </div>
@@ -10,13 +10,10 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-md-4">
-                            <a class="btn btn-success btn-sm text-uppercase font-weight-bold text-white" href="<?= base_url() ?>Siswa"> kembali</a>
-                            <button type="button" class="btn btn-primary btn-sm text-uppercase font-weight-bold" data-toggle="modal" data-target="#exampleModal">
-                                Tambah Siswa
-                            </button>
+                        <div class="col-md-1">
+                            <a class="btn btn-success btn-sm text-uppercase font-weight-bold text-white" href="<?= base_url() ?>Pembayaran_spp"> kembali</a>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-11">
                             <h5>Jumlah Sisiwa : <?= $header['jumlah_siswa'] ?></h5>
                         </div>
                     </div>
@@ -56,29 +53,6 @@
                         </table>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Siswa</h5>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label>Nama Siswa</label>
-                        <input type="test" class="form-control">
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
