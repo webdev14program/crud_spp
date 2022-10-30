@@ -24,4 +24,13 @@ class Pembayaran_spp extends CI_Controller
         $this->load->view('tampilan_detail_spp', $isi);
         $this->load->view('templates/footer');
     }
+    public function detail_siswa_spp($id_siswa)
+    {
+        // $isi['header'] = $this->Model_siswa->header_dataSiswa($id_kelas);
+        $isi['siswa'] = $this->Model_siswa->dataSiswaSPP($id_siswa);
+        $this->load->view('templates/header');
+        $this->load->view('templates/navbar');
+        $this->load->view('tampilan_detail_spp_siswa', $isi);
+        $this->load->view('templates/footer');
+    }
 }

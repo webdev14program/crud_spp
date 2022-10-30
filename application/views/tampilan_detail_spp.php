@@ -34,6 +34,7 @@
                                     <th scope="col">Nama Siswa</th>
                                     <th scope="col">Kelas</th>
                                     <th scope="col">Jurusan</th>
+                                    <th scope="col">AKSI</th>
 
                                 </tr>
                             </thead>
@@ -47,6 +48,11 @@
                                         <td class="text-center text-uppercase"><?= $row['nama_siswa'] ?></td>
                                         <td class="text-center"><?= $row['kelas'] ?></td>
                                         <td class="text-center"><?= $row['jurusan'] ?></td>
+                                        <td>
+                                            <h5 class="text-center">
+                                                <a class="btn btn-primary btn-sm text-uppercase font-weight-bold" href="<?= base_url() ?>Pembayaran_spp/detail_siswa_spp/<?= $row['id_siswa'] ?>">Detail</a>
+                                            </h5>
+                                        </td>
                                 </tr>
                             <?php } ?>
                             </tbody>

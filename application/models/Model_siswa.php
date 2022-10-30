@@ -55,4 +55,16 @@ WHERE a_kelas.id='$id_kelas';";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
+
+    public function dataSiswaSPP($id_siswa)
+    {
+        $sql = "SELECT a_kelas.id,a_siswa.id AS id_siswa,a_siswa.nama_siswa,a_kelas.kelas,a_jurusan.jurusan FROM `a_siswa`
+INNER JOIN a_kelas
+ON a_siswa.kelas=a_kelas.id
+INNER JOIN a_jurusan
+ON a_kelas.kode=a_jurusan.kode
+WHERE a_siswa.id='$id_siswa';";
+        $query = $this->db->query($sql);
+        return $query->row_array();
+    }
 }
