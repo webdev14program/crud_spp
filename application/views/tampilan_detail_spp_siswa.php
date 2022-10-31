@@ -64,7 +64,7 @@
                 <form>
                     <div class="form-group">
                         <label>Nama Siswa</label>
-                        <input type="text" class="form-control" value="<?= $siswa['nama_siswa'] ?>" disabled>
+                        <input type="text" class="form-control text-uppercase" value="<?= $siswa['nama_siswa'] ?>" disabled>
                     </div>
                     <div class="form-group">
                         <label>Kelas</label>

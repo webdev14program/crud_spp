@@ -22,7 +22,7 @@
                     <a class="nav-link" href="<?= base_url() ?>Pembayaran_spp">SPP Siswa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="<?= base_url() ?>Contact">Contact</a>
                 </li>
 
             </ul>
