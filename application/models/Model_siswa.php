@@ -67,4 +67,13 @@ WHERE a_siswa.id='$id_siswa';";
         $query = $this->db->query($sql);
         return $query->row_array();
     }
+    public function TabeldataSiswaSPP($id_siswa)
+    {
+        $sql = "SELECT spp.id_spp,a_siswa.nama_siswa,spp.bulan,spp.nominal,spp.timestamp FROM `spp`
+INNER JOIN a_siswa
+ON spp.id_siswa=a_siswa.id
+WHERE spp.id_siswa='$id_siswa';";
+        $query = $this->db->query($sql);
+        return $query->result_array();
+    }
 }

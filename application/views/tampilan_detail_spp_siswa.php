@@ -44,7 +44,17 @@
                             </tr>
                         </thead>
                         <tbody>
-
+                            <tr>
+                                <?php
+                                $no = 1;
+                                foreach ($tabel as $row) {
+                                ?>
+                                    <td><?php echo $no++; ?></td>
+                                    <td class="text-center"><?= $row['bulan'] ?></td>
+                                    <td class="text-center"><?= $row['nominal'] ?></td>
+                                    <td class="text-center"><?= $row['timestamp'] ?></td>
+                            </tr>
+                        <?php } ?>
                         </tbody>
                     </table>
                 </div>
@@ -61,7 +71,8 @@
                 <h5 class="modal-title" id="exampleModalLabel">Pembayaran SPP</h5>
             </div>
             <div class="modal-body">
-                <form>
+                <form action="<?= base_url() ?>Pembayaran_spp/simpan_spp" method="POST">
+                    <input type="text" class="form-control text-uppercase" name="id_siswa" value="<?= $siswa['id_siswa'] ?>" hidden>
                     <div class="form-group">
                         <label>Nama Siswa</label>
                         <input type="text" class="form-control text-uppercase" value="<?= $siswa['nama_siswa'] ?>" disabled>
