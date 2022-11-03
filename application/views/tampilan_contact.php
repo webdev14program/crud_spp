@@ -8,7 +8,7 @@
         <div class="col-md mt-4">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="text-center font-weight-bold">MUHAMMAD RIZKY AL AKBAR</h5>
+                    <h5 class="text-center font-weight-bold">MOHAMAD RIZKI</h5>
                 </div>
                 <div class="card-body text-center">
                     <h5>XI TKJT 1</h5>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="card-footer text-muted">
                     <h5 class="text-center text-uppercase font-weight-bold">
-                        <a class="btn btn-success btn-sm" href="https://api.whatsapp.com/send?phone=6285778896235&text=Assalamualaikum, *MUHAMMAD RIZKY AL AKBAR*, Ingin Menanyakan Masalah BackEnd SPP CRUD" target="_blank">Contact</a>
+                        <a class="btn btn-success btn-sm" href="https://api.whatsapp.com/send?phone=6285778896235&text=Assalamualaikum, *MOHAMAD RIZKI*, Ingin Menanyakan Masalah BackEnd SPP CRUD" target="_blank">Contact</a>
                     </h5>
                 </div>
             </div>
