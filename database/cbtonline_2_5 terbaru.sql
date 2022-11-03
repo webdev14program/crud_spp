@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 31, 2022 at 04:12 AM
+-- Generation Time: Nov 03, 2022 at 12:08 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -666,6 +666,30 @@ INSERT INTO `soal` (`id_bank_soal`, `soal`, `pilA`, `pilB`, `pilC`, `pilD`, `pil
 (7460242, 'P address terdiri atas dua bagian yaitu....', 'Network ID dan broadcast ID', 'Bit dan nyble', 'Network ID dan host ID', 'Kelas A dan kelas D', 'Internet dan local', 'c'),
 (7460242, 'Kepanjangan dari OSI yaitu', 'Oppen System Internet', 'Open System Interconnections', 'Open System Internasional', 'Organizations System Interconecsi', 'Open Sharing Interconections', 'B');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `spp`
+--
+
+CREATE TABLE `spp` (
+  `id_spp` int(16) NOT NULL,
+  `id_siswa` int(16) NOT NULL,
+  `bulan` varchar(128) NOT NULL,
+  `nominal` int(128) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `spp`
+--
+
+INSERT INTO `spp` (`id_spp`, `id_siswa`, `bulan`, `nominal`, `timestamp`) VALUES
+(281267, 1011, 'Januari', 400000, '2022-11-03 10:57:58'),
+(464200, 1011, 'Maret', 400000, '2022-11-03 11:07:28'),
+(576701, 1008, 'Januari', 400000, '2022-11-03 11:01:15'),
+(769247, 1011, 'Februari', 400000, '2022-11-03 10:59:36');
+
 --
 -- Indexes for dumped tables
 --
@@ -719,6 +743,12 @@ ALTER TABLE `jadwal_ujian`
   ADD PRIMARY KEY (`id_jadwal_ujian`);
 
 --
+-- Indexes for table `spp`
+--
+ALTER TABLE `spp`
+  ADD PRIMARY KEY (`id_spp`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -757,6 +787,12 @@ ALTER TABLE `bank_soal`
 --
 ALTER TABLE `jadwal_ujian`
   MODIFY `id_jadwal_ujian` int(18) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=984812;
+
+--
+-- AUTO_INCREMENT for table `spp`
+--
+ALTER TABLE `spp`
+  MODIFY `id_spp` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=769248;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
