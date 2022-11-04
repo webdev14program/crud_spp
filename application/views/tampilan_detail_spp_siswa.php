@@ -1,11 +1,17 @@
 <div class="jumbotron jumbotron-fluid text-center text-uppercase">
-    <h3 class="display-4">PEMBAYARAN SPP SISWA TJKT</h3>
+    <h3 class="display-4">PEMBAYARAN SPP SISWA</h3>
     <hr class="my-4">
 </div>
 
 <div class="container">
-    <div class="col-md-1">
-        <a class="btn btn-success btn-sm text-uppercase font-weight-bold text-white" href="<?= base_url() ?>Pembayaran_spp/detail_siswa/<?= $siswa['id'] ?>"> kembali</a>
+    <div class="row">
+        <div class="col-md">
+            <div class="card">
+                <div class="card-body">
+                    <a class="btn btn-success btn-sm text-uppercase font-weight-bold text-white" href="<?= base_url() ?>Pembayaran_spp/detail_siswa/<?= $siswa['id'] ?>"> kembali</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-md mt-2">

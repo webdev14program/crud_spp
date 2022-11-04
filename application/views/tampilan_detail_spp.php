@@ -1,5 +1,5 @@
 <div class="jumbotron jumbotron-fluid text-center text-uppercase">
-    <h3 class="display-4">PEMBAYARAN SPP SISWA TJKT</h3>
+    <h3 class="display-4">PEMBAYARAN SPP SISWA</h3>
     <hr class="my-4">
     <h3 class="display-4">KELAS <?= $header['kelas'] ?></h3>
 </div>

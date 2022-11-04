@@ -1,5 +1,5 @@
 <div class="jumbotron jumbotron-fluid text-center text-uppercase">
-    <h3 class="display-4">SISWA TJKT</h3>
+    <h3 class="display-4">SISWA</h3>
     <hr class="my-4">
 </div>
 
@@ -29,7 +29,7 @@
                                         ?>
                                             <td><?php echo $no++; ?></td>
                                             <td class="text-center"><?= $row['id'] ?></td>
-                                            <td class="text-center"><?= $row['jurusan'] ?></td>
+                                            <td><?= $row['jurusan'] ?></td>
                                             <td class="text-center"><?= $row['kelas'] ?></td>
                                             <td class="text-center text-uppercase"><?= $row['jumlah_siswa'] ?> Siswa</td>
                                             <td>

@@ -1,6 +1,6 @@
 <div class="jumbotron jumbotron-fluid text-center text-uppercase">
-    <h3 class="display-4">SISWA TJKT</h3>
-    <hr class="my-4">
+    <h3 class="display-4">SISWA</h3>
+    <hr class="my-4 font-weight-bold">
     <h3 class="display-4">KELAS <?= $header['kelas'] ?></h3>
 </div>
 

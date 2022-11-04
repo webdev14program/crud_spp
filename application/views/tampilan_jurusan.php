@@ -1,5 +1,5 @@
 <div class="jumbotron jumbotron-fluid text-center text-uppercase">
-    <h3 class="display-4">Teknik Jaringan Komputer dan Telekomunikasi</h3>
+    <h3 class="display-4">Jurusan</h3>
     <hr class="my-4">
 </div>
 

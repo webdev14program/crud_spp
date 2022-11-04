@@ -6,27 +6,45 @@ class Model_siswa extends CI_Model
     public function countSiswaX()
     {
         $sql = "SELECT COUNT(*) AS jumlah_siswa FROM `a_siswa`
-                INNER JOIN a_kelas
-                ON a_siswa.kelas=a_kelas.id
-                WHERE a_kelas.kelas LIKE '%X%';";
+WHERE a_siswa.kelas IN ('1007666','1008112','1009598');";
         $query = $this->db->query($sql);
         return $query->row_array();
     }
     public function countSiswaXI()
     {
         $sql = "SELECT COUNT(*) AS jumlah_siswa FROM `a_siswa`
-                INNER JOIN a_kelas
-                ON a_siswa.kelas=a_kelas.id
-                WHERE a_kelas.kelas LIKE '%XI%';";
+WHERE a_siswa.kelas IN ('1017187','1018790','1019803');";
         $query = $this->db->query($sql);
         return $query->row_array();
     }
     public function countSiswaXII()
     {
         $sql = "SELECT COUNT(*) AS jumlah_siswa FROM `a_siswa`
-                INNER JOIN a_kelas
-                ON a_siswa.kelas=a_kelas.id
-                WHERE a_kelas.kelas LIKE '%XII%';";
+WHERE a_siswa.kelas IN ('1026282','1027878','1028887');";
+        $query = $this->db->query($sql);
+        return $query->row_array();
+    }
+
+    public function countSiswaXPM()
+    {
+        $sql = "SELECT COUNT(*) AS jumlah_siswa FROM `a_siswa`
+WHERE a_siswa.kelas IN ('1028888');";
+        $query = $this->db->query($sql);
+        return $query->row_array();
+    }
+
+    public function countSiswaXIPM()
+    {
+        $sql = "SELECT COUNT(*) AS jumlah_siswa FROM `a_siswa`
+WHERE a_siswa.kelas IN ('1028889');";
+        $query = $this->db->query($sql);
+        return $query->row_array();
+    }
+
+    public function countSiswaXIIPM()
+    {
+        $sql = "SELECT COUNT(*) AS jumlah_siswa FROM `a_siswa`
+WHERE a_siswa.kelas IN ('1028890','1028891');";
         $query = $this->db->query($sql);
         return $query->row_array();
     }
