@@ -26,6 +26,9 @@
                                             <th scope="col">
                                                 <h6 class="font-weight-bold" style="text-transform: uppercase;">Jurusan</h6>
                                             </th>
+                                            <th scope="col">
+                                                <h6 class="font-weight-bold" style="text-transform: uppercase;">Jumlah Kelas</h6>
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -45,6 +48,9 @@
                                                 </td>
                                                 <td>
                                                     <h6 class="text-uppercase"><?php echo $row['jurusan']; ?></h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="text-uppercase text-center"><?php echo $row['jumlah_kelas']; ?> Kelas</h6>
                                                 </td>
                                         </tr>
                                     <?php } ?>

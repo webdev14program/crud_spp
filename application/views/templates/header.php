@@ -11,6 +11,7 @@
 
     <title>CRUD SPP</title>
     <link rel="icon" href="https://smkth-jakbar.com/assets/images/logo.png">
+    <script src="https://kit.fontawesome.com/e78660954c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
